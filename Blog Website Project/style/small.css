@@ -39,3 +39,17 @@ nav li {
 #contact-form {
   width: 80%;
 }
+
+footer {
+  display: block;
+}
+
+footer .rights {
+  margin-bottom: 2rem;
+  justify-content: center;
+}
+
+.social-link {
+  display: flex;
+  justify-content: center;
+}
