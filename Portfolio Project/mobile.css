@@ -1,0 +1,479 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.nav-logo,
+.nav-heading,
+.nav-menu {
+  float: left;
+}
+
+[class*="col-"] {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+.dotted-hr {
+  border: 5px dotted white;
+  border-bottom: none;
+  width: 100px;
+}
+
+/* Navbar Design Starts */
+
+.navbar {
+  text-align: center;
+  background-color: cadetblue;
+  padding: 1% 7%;
+}
+
+.nav-logo img {
+  max-width: 150px;
+  height: auto;
+  transition: transform 2s;
+}
+
+.nav-logo img:hover {
+  transform: rotate(360deg);
+}
+
+.nav-heading {
+  font-size: 1.2rem;
+  color: white;
+  transition: transform 3s;
+}
+
+.nav-heading:hover {
+  transform: rotate3d(1, 1, 1, 360deg);
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-menu a {
+  padding: 5px;
+  margin: 10px;
+  background-color: darkcyan;
+  border-radius: 10px;
+  font-size: 1.1rem;
+}
+
+.nav-menu a:hover {
+  background-color: gray;
+  font-size: 1.2rem;
+}
+
+.navbar::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Navbar Design Ends */
+
+/* Profile Design Starts */
+
+.profile {
+  position: relative;
+  height: 80vh;
+  padding: 0 20px;
+}
+
+.profile-desc {
+  padding: 80px 10px;
+  text-align: center;
+}
+
+.profile-desc h1 {
+  font-family: "Playwrite BE WAL", cursive;
+  font-size: 1.7rem;
+}
+
+.profile-desc p {
+  color: gray;
+}
+
+.top-profile-icon {
+  max-width: 120px;
+  height: auto;
+  position: absolute;
+  right: 50px;
+  top: 10px;
+  transition: transform 2s;
+}
+
+.bottom-profile-icon {
+  max-width: 120px;
+  height: auto;
+  position: absolute;
+  left: 50px;
+  bottom: 20px;
+  transition: transform 2s;
+}
+
+.top-profile-icon:hover,
+.bottom-profile-icon:hover {
+  transform: rotate(360deg);
+}
+
+/* Profile Design Ends */
+
+/* About Me Design Starts */
+
+.aboutme {
+  background-color: steelblue;
+  color: white;
+  padding: 1% 7%;
+}
+
+.aboutme h2 {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.aboutme-img {
+  float: left;
+  text-align: center;
+  padding: 10px;
+}
+
+.aboutme-img img {
+  width: 175px;
+  height: 200px;
+  border: 3px solid white;
+  border-radius: 50%;
+}
+
+.aboutme-desc {
+  float: left;
+  text-align: center;
+}
+
+.cv-btn {
+  background-color: darkgreen;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px black;
+  margin: 10px;
+}
+
+.aboutme::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* About Me Design End */
+
+/* Professional Exprience Design Start */
+
+.professional-exp {
+  padding: 1% 7%;
+}
+
+.work,
+.education,
+.skills {
+  float: left;
+  margin: 3px;
+}
+
+.card {
+  background-color: darkslategray;
+  height: 750px;
+  padding: 10px 20px;
+  transition: 2s;
+  border-radius: 10px;
+}
+
+.card:hover {
+  box-shadow: 0 4px 6px 5px black;
+}
+
+.card-img {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.rounded-image {
+  width: 100px;
+  height: 100px;
+  border: 2px solid white;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.card-heading h2 {
+  background-color: olive;
+  color: white;
+  text-align: center;
+}
+
+.skills .card-desc ul {
+  padding-right: 40px;
+}
+
+.skills .card-desc li {
+  list-style-type: none;
+  padding: 15px 0;
+  font-weight: bold;
+  color: white;
+  position: relative;
+}
+
+.skills .card-desc li::before {
+  content: "";
+  background-color: burlywood;
+  position: absolute;
+  top: calc(70%);
+  left: 0;
+  width: 100%;
+  height: 15px;
+  border-radius: 10px;
+}
+
+.skills .card-desc li::after {
+  content: "";
+  background-color: burlywood;
+  position: absolute;
+  top: calc(70%);
+  left: 0;
+  width: 0%;
+  height: 15px;
+  border-radius: 10px;
+
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 3;
+}
+
+.skills .card-desc li#html::after {
+  animation-name: html;
+}
+
+@keyframes html {
+  to {
+    width: 90%;
+    background-color: chocolate;
+  }
+}
+
+.skills .card-desc li#css::after {
+  animation-name: css;
+}
+
+@keyframes css {
+  to {
+    width: 80%;
+    background-color: chocolate;
+  }
+}
+
+.skills .card-desc li#js::after {
+  animation-name: js;
+}
+
+@keyframes js {
+  to {
+    width: 70%;
+    background-color: chocolate;
+  }
+}
+
+.skills .card-desc li#bs::after {
+  animation-name: bs;
+}
+
+@keyframes bs {
+  to {
+    width: 85%;
+    background-color: chocolate;
+  }
+}
+
+.skills .card-desc li#python::after {
+  animation-name: python;
+}
+
+@keyframes python {
+  to {
+    width: 82%;
+    background-color: chocolate;
+  }
+}
+
+.skills .card-desc li#c::after {
+  animation-name: c;
+}
+
+@keyframes c {
+  to {
+    width: 75%;
+    background-color: chocolate;
+  }
+}
+
+.skills .card-desc li#django::after {
+  animation-name: django;
+}
+
+@keyframes django {
+  to {
+    width: 60%;
+    background-color: chocolate;
+  }
+}
+
+.skills .card-desc li#react::after {
+  animation-name: react;
+}
+
+@keyframes react {
+  to {
+    width: 65%;
+    background-color: chocolate;
+  }
+}
+
+.professional-exp::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Professional Exprience Design End */
+
+/* Achivement-Contact Design Start */
+
+.achivement-contact {
+  padding: 1% 7%;
+  background-color: steelblue;
+}
+
+.achivement-contact h2 {
+  text-align: center;
+}
+
+.achivement {
+  float: left;
+  color: white;
+}
+
+.achivement li {
+  padding: 10px 0;
+}
+
+.achivement-contact::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.contact {
+  float: left;
+  color: white;
+  text-align: center;
+}
+
+.contact input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  text-align: center;
+  font-size: 1rem;
+  resize: none;
+  border-radius: 5px;
+}
+
+.contact button {
+  border: none;
+  background-color: midnightblue;
+  padding: 15px;
+  color: white;
+  border-radius: 12px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.contact button:hover {
+  background-color: white;
+  color: midnightblue;
+}
+
+.contact-links {
+  float: left;
+  color: white;
+  text-align: center;
+}
+
+.media-buttons {
+  padding: 15px;
+}
+
+.media-buttons .btn {
+  border: none;
+  font-size: 1.5rem;
+  border-radius: 25px;
+  padding: 5px;
+  cursor: pointer;
+  width: 40px;
+  background-color: white;
+  margin: 5px;
+}
+
+.media-buttons .btn:hover {
+  background-color: gray;
+}
+
+/* Achivement-Contact Design End */
+
+/* Footer Design Start here */
+
+.footer {
+  background-color: black;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+.footer-menu {
+  float: left;
+  margin-top: 5px;
+}
+
+.footer-menu a {
+  padding: 10px;
+  font-size: 0.8rem;
+  display: block;
+}
+
+.footer-desc {
+  float: left;
+  font-size: 0.8rem;
+}
+
+.footer::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer Design End here */

@@ -1,0 +1,118 @@
+/* Grid Column Size */
+.col-1 {
+  width: 8.33%;
+}
+.col-2 {
+  width: 16%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 32.5%;
+}
+.col-5 {
+  width: 41.67%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.35%;
+}
+.col-8 {
+  width: 66.67%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33%;
+}
+.col-11 {
+  width: 91.67%;
+}
+.col-12 {
+  width: 100%;
+}
+
+/* Navbar Design Starts */
+
+.nav-menu {
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 30px;
+}
+
+.nav-menu a {
+  background-color: transparent;
+}
+
+/* Navbar Desing Ends */
+
+/* Profile Section Start */
+
+.profile-desc {
+  padding: 60px 40px;
+}
+
+.profile-desc h1 {
+  font-size: 2rem;
+}
+
+.top-profile-icon {
+  right: 100px;
+}
+
+.bottom-profile-icon {
+  left: 100px;
+}
+
+/* Profile Section End */
+
+/* About Me section Start */
+
+.aboutme-img {
+  text-align: left;
+  padding: 0 80px;
+}
+
+.aboutme-img img {
+  margin-top: 10%;
+  width: 230px;
+  height: 275px;
+}
+
+.aboutme-desc p {
+  text-align: left;
+}
+
+/* About Me section End */
+
+/* Achivement-Contact Section Start */
+
+.achivement {
+  margin-right: 30px;
+}
+
+.contact-links {
+  position: relative;
+}
+
+.media-buttons {
+  position: absolute;
+  margin-top: 200px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Achivement-Contact Section End */
+
+/* Footer Design Start */
+
+.footer-menu a {
+  display: inline;
+}
+
+/* Footer Design End */

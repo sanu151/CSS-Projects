@@ -1,0 +1,53 @@
+/* Grid Column For 768px Screen Size */
+
+.col-md-1 {
+  width: 8.33%;
+}
+.col-md-2 {
+  width: 16%;
+}
+.col-md-3 {
+  width: 25%;
+}
+.col-md-4 {
+  width: 32.5%;
+}
+.col-md-5 {
+  width: 41.67%;
+}
+.col-md-6 {
+  width: 50%;
+}
+.col-md-7 {
+  width: 58.35%;
+}
+.col-md-8 {
+  width: 66.67%;
+}
+.col-md-9 {
+  width: 75%;
+}
+.col-md-10 {
+  width: 83.33%;
+}
+.col-md-11 {
+  width: 91.67%;
+}
+.col-md-12 {
+  width: 100%;
+}
+
+/* Header Design Start */
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  display: inline;
+}
+
+nav ul li a:hover {
+  background-color: transparent;
+  font-size: 1.2rem;
+}
+/* Header Design End */

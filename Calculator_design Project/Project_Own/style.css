@@ -1,0 +1,94 @@
+.roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+#heading-text {
+  display: block;
+  margin: 0;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.calculator-container {
+  width: 500px;
+  height: 560px;
+  box-sizing: border-box;
+}
+
+.input-div {
+  display: flex;
+  justify-content: center;
+  border: 2px solid cornflowerblue;
+}
+
+.input-div:hover {
+  box-shadow: 3px 3px 3px gray;
+}
+
+.calculator-container .input-div input {
+  width: 100%;
+  height: 70px;
+  text-align: end;
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+  outline: none;
+  border: none;
+}
+
+.calculator-container .input-div input:focus {
+  outline: none;
+}
+
+.buttons-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 80%;
+}
+
+#btn-devide,
+#btn-multiply,
+#btn-minus,
+#btn-plus {
+  background-color: blueviolet;
+}
+
+#btn-equal {
+  background-color: orange;
+}
+
+.btn {
+  width: 24%;
+  height: 18%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  font-size: 1.2rem;
+  box-shadow: 2px 3px 3px gray;
+}
+
+.btn:hover {
+  background-color: pink;
+  box-shadow: 2px 3px 3px darkgray;
+}
+
+#btn-devide:hover,
+#btn-multiply:hover,
+#btn-minus:hover,
+#btn-plus:hover,
+#btn-equal:hover {
+  background-color: pink;
+  box-shadow: 2px 2px 2px darkgray;
+}

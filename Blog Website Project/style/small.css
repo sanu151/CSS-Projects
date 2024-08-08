@@ -1,0 +1,41 @@
+html {
+  font-size: 48%;
+}
+
+/* Header Design Start */
+header {
+  flex-direction: column;
+  position: static;
+}
+
+nav li {
+  margin-right: 0;
+  display: block;
+  text-align: center;
+  margin: 1rem auto;
+}
+/* Header Design End */
+
+/* Banner Design Start */
+#banner-section {
+  width: 80%;
+}
+/* Banner Design Start */
+
+/* About Me Design Start */
+.card-container {
+  width: 60%;
+}
+
+/* About Me Design Start */
+
+/* Blog Posts Design Start */
+.blog-container {
+  flex-direction: column;
+  width: 60%;
+}
+/* Blog Posts Design End */
+
+#contact-form {
+  width: 80%;
+}

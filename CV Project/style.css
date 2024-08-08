@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgba(238, 217, 189, 0.895);
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+hr {
+  margin: 20px 40px;
+  border: solid black 3px;
+  border-bottom: none;
+}
+
+.common-hr {
+  margin: 20px 40px;
+  border: solid black 1px;
+  border-bottom: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: darkblue;
+}
+
+.container {
+  max-width: 80%;
+  background-color: aquamarine;
+  margin: 0 auto;
+}
+
+/* Header Section Start */
+#header_image {
+  width: 120px;
+  height: 120px;
+  border: 3px solid white;
+  border-radius: 60px;
+  margin: 15px 15px 15px 40px;
+  float: left;
+}
+
+.header_bio {
+  float: left;
+  padding: 35px 15px;
+}
+
+.header-contact {
+  float: right;
+  padding: 30px 50px;
+}
+
+.header-contact a {
+  text-decoration: none;
+  color: mediumslateblue;
+  font-weight: bold;
+}
+
+.header-contact a:hover {
+  text-decoration: underline;
+  color: tomato;
+  font-weight: bold;
+  font-size: 1.05rem;
+}
+/* Header Section End */
+
+/* Main Section Start */
+.clear-float {
+  clear: both;
+  padding-bottom: 10px;
+}
+
+.content {
+  padding: 0px 40px;
+}
+
+.left-div {
+  width: 30%;
+  float: left;
+  padding-bottom: 20px;
+}
+
+.right-div {
+  width: 70%;
+  float: left;
+  padding-bottom: 20px;
+}
+/* Main Section End */
+
+/* Personal Section Start */
+#personal-section {
+}
+/* Personal Section End */
+
+/* Work Exprience Section start */
+.exprience-div {
+  padding-bottom: 15px;
+}
+/* Work Exprience Section End */
+
+/* Key Skills Section Start */
+#key-skills {
+}
+/* Key Skills Section End */
+
+/* Education Section start */
+#education-section {
+}
+
+.education {
+  float: left;
+  width: 30%;
+  padding: 5px;
+}
+/* Education Section end */
+
+/* Ceritfication Section Start */
+#certificate-section {
+}
+/* Ceritfication Section End */
+
+/* IT Forte Section Start */
+#it-forte {
+  padding-top: 10px;
+  color: blue;
+}
+.it-certificate {
+  margin-left: 40px;
+}
+/* IT Forte Section End */
+
+/* Footer section Start */
+.bottom-container {
+  background-color: black;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+.bottom-container a {
+  text-decoration: none;
+  color: white;
+  margin: 20px;
+  padding-top: 10px;
+}
+.bottom-container a:hover {
+  text-decoration: underline;
+  color: yellow;
+  font-size: 1.06rem;
+}
+.bottom-container p {
+  padding: 5px 10px;
+  margin-top: 10px;
+}
+/* Footer section End */

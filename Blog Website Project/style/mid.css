@@ -1,0 +1,24 @@
+html {
+  font-size: 55%;
+}
+
+/* Banner Design Start */
+#banner-section {
+  flex-direction: column;
+  margin: 5rem auto;
+  width: 60%;
+}
+/* Banner Design Start */
+
+/* About Me Design Start */
+.card-container {
+  width: 50%;
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  margin: 2rem;
+}
+/* About Me Design Start */

@@ -1,0 +1,252 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  /* font-family: "Montserrat", sans-serif;
+  font-family: "Handlee", cursive;
+  font-family: "Roboto", sans-serif; */
+}
+
+.container {
+  max-width: 1280px;
+  margin: auto;
+}
+
+[class*="col-"] {
+  width: 100%;
+  float: left;
+  padding: 15px;
+}
+
+.row {
+  width: 100%;
+}
+
+/* Header Desing Start */
+
+header {
+  background-color: cadetblue;
+  text-align: center;
+}
+
+.logo {
+  padding: 5px;
+  width: 80px;
+  line-height: 70px;
+  color: white;
+  border: 2px solid white;
+  border-radius: 50%;
+  text-align: center;
+}
+
+nav ul li {
+  list-style: none;
+  display: block;
+  line-height: 70px;
+  padding: 0 20px;
+}
+
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+nav ul li a:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Header Desing Start */
+
+/* Banner Design Start */
+#banner {
+  background-image: url("images/background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.banner-content {
+  padding: 1% 2%;
+  text-align: center;
+}
+
+.banner-content h1 {
+  background-color: yellowgreen;
+  font-size: 3rem;
+  margin: 20px 40px;
+  border-radius: 5px;
+  font-family: "Handlee", cursive;
+  padding: 20px 40px;
+}
+
+.banner-content p {
+  background-color: darkgreen;
+  color: white;
+  max-width: 350px;
+  margin: 10px auto;
+  padding: 10px 20px;
+  font-size: 1.3rem;
+  transform: rotate(-10deg);
+}
+
+.banner-content .btn {
+  background-color: darkgreen;
+  color: white;
+  width: 160px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 15px auto;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.banner-content .btn:hover {
+  transform: scale(1.5);
+}
+
+/* Banner Design End */
+
+/* About Me Design Start */
+
+#about_me {
+  padding: 1%;
+  text-align: center;
+}
+
+.about {
+  padding: 10px;
+}
+
+.about h3 {
+  font-size: 1.5rem;
+  padding: 20px;
+  font-weight: bold;
+}
+
+.about p {
+  font-size: 0.9rem;
+}
+
+/* About Me Design End */
+
+/* Food Menu Design Start */
+
+#food_menu {
+  padding: 1%;
+  background-color: burlywood;
+}
+
+.card {
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card-desc {
+  background-color: gray;
+}
+
+.card-desc h3 {
+  background-color: darkgreen;
+  color: white;
+  padding: 10px;
+  font-size: 1.3rem;
+}
+
+.card-desc p {
+  font-size: 1rem;
+  padding: 15px;
+  font-weight: bold;
+}
+
+/* Food Menu Design End */
+
+/* Contact Details Design Start */
+
+#contact {
+  background: blueviolet;
+  padding: 1%;
+  display: block;
+}
+
+.map {
+  width: 100%;
+  height: 300px;
+}
+
+.contact-desc {
+  text-align: center;
+  padding: 20px;
+  color: white;
+}
+
+.contact-desc h5 {
+  margin-top: 20px;
+}
+
+.contact-desc p,
+address {
+  font-size: 0.8rem;
+}
+
+/* Contact Details Design End */
+
+/* Footer Design Start */
+
+footer {
+  padding: 1%;
+  background-color: rgb(1, 1, 52);
+  color: white;
+}
+
+footer p {
+  text-align: center;
+  font-size: 0.8rem;
+  line-height: 32px;
+}
+
+.footer-menu {
+  text-align: center;
+  padding: 10px;
+}
+
+.icon-style {
+  color: white;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin: 10px;
+  text-align: center;
+  transition: 0.4s;
+}
+
+.icon-style:hover {
+  background-color: grey;
+  transform: scale(1.2);
+}
+
+/* Footer Design End */
