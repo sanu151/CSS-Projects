@@ -5,7 +5,15 @@ html {
 /* Header Design Start */
 header {
   flex-direction: column;
-  position: static;
+}
+
+#menu-icon {
+  margin-top: 2rem;
+  display: block;
+}
+
+.hidden {
+  display: none;
 }
 
 nav li {
