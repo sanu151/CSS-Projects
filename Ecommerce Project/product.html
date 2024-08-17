@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- meta-tag for SCO -->
+    <meta
+      name="description"
+      content="This is an ecommerce demo project made by Supriyo Das"
+    />
+
+    <title>E-commerce Demo Project</title>
+
+    <!-- font-awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- external CSS -->
+    <link rel="stylesheet" href="CSS/style.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="roboto-regular">
+    <!-- navbar start -->
+    <i class="fa-solid fa-bars fa-2x" id="menu-icon"></i>
+    <nav class="indie-flower-regular hidden" id="menu">
+      <ul class="nav-upper flex-space-around">
+        <li class="nav__list">
+          <a href="index.html" class="nav__link">Home</a>
+        </li>
+        <li class="nav__list">
+          <a href="register.html" class="nav__link">Register</a>
+        </li>
+        <li class="nav__list">
+          <a href="login.html" class="nav__link">Login</a>
+        </li>
+        <li class="nav__list">
+          <a href="index.html" class="nav__link">Logout</a>
+        </li>
+        <li class="nav__list">
+          <a href="contact.html" class="nav__link">Contact</a>
+        </li>
+        <li class="nav__list">
+          <a href="profile.html" class="nav__link">
+            <img
+              class="profile-img"
+              src="/images/profile.png"
+              alt="Profile Picture"
+            />
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- navbar end -->
+
+    <main class="main-section flex-center">
+      <div class="img-div">
+        <img src="images/product_1.jpeg" alt="Product 1" />
+      </div>
+      <div class="desc-div">
+        <h1>Tony X-4 Headphone</h1>
+        <p>
+          Experience immersive sound with the Tony X-4 Headphone, designed to
+          deliver exceptional audio quality and comfort. With its sleek black,
+          steel, and copper design, this headphone is not only stylish but also
+          built to last.
+        </p>
+        <div class="key-feature">
+          <h3>Key Features:</h3>
+          <ul>
+            <li>
+              - Crystal-clear sound: Enjoy precise and balanced audio with deep
+              bass and clear treble
+            </li>
+            <li>
+              - Ergonomic design: Adjustable headband and cushioned ear cups for
+              long-lasting comfort
+            </li>
+            <li>
+              - Durable materials: Sturdy steel and copper accents ensure
+              durability and longevity
+            </li>
+            <li>
+              - Noise-isolating: Immerse yourself in music without distractions
+            </li>
+          </ul>
+        </div>
+        <div class="perfect-for">
+          <h3>Perfect for:</h3>
+          <ul>
+            <li>- Music lovers seeking high-quality sound</li>
+            <li>- Gamers looking for an immersive experience</li>
+            <li>- Anyone seeking comfort and style in a headphone</li>
+          </ul>
+        </div>
+        <h4>
+          Get ready to elevate your audio experience with the Tony X-4
+          Headphone!
+        </h4>
+        <button class="btn">Add To Cart</button>
+        <button class="btn">Return to Shopping</button>
+      </div>
+    </main>
+
+    <!-- footer start -->
+    <footer class="footer flex-space-around product-footer">
+      <div class="flex-space-around">
+        <label for="subscribe">Subscribe to Newsletter </label>
+        <input
+          type="email"
+          name="subscribe"
+          id="subscribe"
+          placeholder="Enter Your Email"
+        />
+        <button class="btn btn-subscribe">subscribe</button>
+      </div>
+      <div>
+        <p class="copyright">
+          &copy; Copyright by Supriyo Das. All rights reserved
+        </p>
+      </div>
+    </footer>
+    <!-- footer end -->
+    <script src="script/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- meta-tag for SCO -->
+    <meta
+      name="description"
+      content="This is an ecommerce demo project made by Supriyo Das"
+    />
+
+    <title>E-commerce Demo Project</title>
+
+    <!-- font-awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- external CSS -->
+    <link rel="stylesheet" href="CSS/style.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="roboto-regular">
+    <!-- navbar start -->
+    <i class="fa-solid fa-bars fa-2x" id="menu-icon"></i>
+    <nav class="indie-flower-regular hidden" id="menu">
+      <ul class="nav-upper flex-space-around">
+        <li class="nav__list">
+          <a href="index.html" class="nav__link">Home</a>
+        </li>
+        <li class="nav__list">
+          <a href="register.html" class="nav__link">Register</a>
+        </li>
+        <li class="nav__list">
+          <a href="login.html" class="nav__link">Login</a>
+        </li>
+        <li class="nav__list">
+          <a href="index.html" class="nav__link">Logout</a>
+        </li>
+        <li class="nav__list">
+          <a href="contact.html" class="nav__link">Contact</a>
+        </li>
+        <li class="nav__list">
+          <a href="profile.html" class="nav__link">
+            <img
+              class="profile-img"
+              src="/images/profile.png"
+              alt="Profile Picture"
+            />
+          </a>
+        </li>
+      </ul>
+
+      <ul class="nav-lower flex-space-around">
+        <li class="nav__list nav__brand">
+          <a href="index.html" class="nav__link">Sanu's Express</a>
+        </li>
+        <li class="nav__list">
+          <a href="cart.html" class="nav__link"
+            ><span><i class="fa-solid fa-cart-shopping"></i></span> Cart 2
+            products - &#8377;19000.00</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- header start -->
+    <header class="header">
+      <div class="banner flex-space-around">
+        <marquee class="banner__title" behavior="" direction=""
+          >50% discount going on</marquee
+        >
+        <div class="features flex-space-around">
+          <article class="feature flex-center">
+            <i class="fa-solid fa-truck-fast feature__icon"></i>
+            <h3>Shipping within 7 days</h3>
+          </article>
+          <article class="feature flex-center">
+            <i class="fa-brands fa-rocketchat feature__icon"></i>
+            <h3>Support 24/7</h3>
+          </article>
+          <article class="feature flex-center">
+            <i class="fa-solid fa-credit-card feature__icon"></i>
+            <h3>Safe Payment</h3>
+          </article>
+        </div>
+      </div>
+    </header>
+    <!-- header end -->
+
+    <!-- main start -->
+    <main class="flex-center main-section">
+      <div class="sidebar">
+        <section class="catagory">
+          <h3>Category</h3>
+          <ul class="list">
+            <li class="list__item">
+              <label for="mobile">
+                <input type="checkbox" name="mobile" id="mobile" />
+                Mobile
+              </label>
+            </li>
+            <li class="list__item">
+              <label for="tablet">
+                <input type="checkbox" name="tablet" id="tablet" />
+                Tablet
+              </label>
+            </li>
+            <li class="list__item">
+              <label for="televison">
+                <input type="checkbox" name="televison" id="televison" />
+                Televison
+              </label>
+            </li>
+            <li class="list__item">
+              <label for="computer">
+                <input type="checkbox" name="computer" id="computer" />
+                Computer
+              </label>
+            </li>
+            <li class="list__item">
+              <label for="headphone">
+                <input type="checkbox" name="headphone" id="headphone" />
+                Headphone
+              </label>
+            </li>
+            <li class="list__item">
+              <label for="smarthome">
+                <input type="checkbox" name="smarthome" id="smarthome" />
+                Smarthome
+              </label>
+            </li>
+          </ul>
+        </section>
+        <section class="price">
+          <h3>Price Range</h3>
+          <ul class="list">
+            <li class="list__item">
+              <label for="price1">
+                <input type="radio" name="price" id="price1" value="[0,200]" />
+                upto &#8377;200
+              </label>
+            </li>
+            <li class="list__item">
+              <label for="price2">
+                <input
+                  type="radio"
+                  name="price"
+                  id="price2"
+                  value="[201,500]"
+                />
+                &#8377;201 - &#8377;500
+              </label>
+            </li>
+            <li class="list__item">
+              <label for="price3">
+                <input
+                  type="radio"
+                  name="price"
+                  id="price3"
+                  value="[501,1000]"
+                />
+                &#8377;501 - &#8377;1000
+              </label>
+            </li>
+            <li class="list__item">
+              <label for="price4">
+                <input
+                  type="radio"
+                  name="price"
+                  id="price4"
+                  value="[1001,5000]"
+                />
+                &#8377;1001 - &#8377;5000
+              </label>
+            </li>
+            <li class="list__item">
+              <label for="price5">
+                <input type="radio" name="price" id="price5" value="[5001,]" />
+                &#8377;5001+
+              </label>
+            </li>
+          </ul>
+        </section>
+        <section class="shipping">
+          <h3>Shipping Preference</h3>
+          <ul class="list">
+            <li class="list__item">
+              <label for="free">
+                <input type="radio" name="shipping" id="free" />
+                Free Shipping
+              </label>
+            </li>
+            <li class="list__item">
+              <label for="paid">
+                <input type="radio" name="shipping" id="paid" />
+                Paid Shipping
+              </label>
+            </li>
+          </ul>
+        </section>
+      </div>
+
+      <div class="main-content">
+        <section class="action flex-space-around">
+          <div class="action__sort">
+            <label for="sort">Sort by: </label>
+            <select name="sort" id="sort">
+              <option value="sale">Most Saled First</option>
+              <option value="rating">Most Rating First</option>
+              <option value="price">Lowest Price First</option>
+              <option value="newest">Newest Arrival First</option>
+              <option value="discount">Top Discount First</option>
+            </select>
+          </div>
+          <div class="action__search">
+            <input
+              type="search"
+              name="search"
+              id="search"
+              placeholder="Search Product"
+            />
+            <button class="btn">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+        </section>
+        <!-- Product Section Start -->
+
+        <section class="products">
+          <!-- Product-1 -->
+          <article class="product card">
+            <div class="badge">
+              <span>5 in stock</span>
+              <hr class="hr-design" />
+              <span>3 sold</span>
+            </div>
+            <img
+              src="/images/product_1.jpeg"
+              alt="Product 1"
+              class="product__img"
+            />
+            <div class="product__desc">
+              <h3>Tony X-4 Headphone</h3>
+              <p>
+                <span class="dot green"></span>
+                <span class="dot black"></span>
+                <span class="dot red"></span>
+              </p>
+              <p>
+                Experience immersive sound with the Tony X-4 Headphone designed,
+                ....
+                <a href="product.html" class="learn-more">Learn More</a>
+              </p>
+              <h4>Price: &#8377; 1999.99</h4>
+              <p>Rating: 4.5/5</p>
+              <button class="btn product__btn">Add to cart</button>
+            </div>
+          </article>
+
+          <!-- Product-2 -->
+          <article class="product card">
+            <div class="badge">
+              <span>2 in stock</span>
+              <hr class="hr-design" />
+              <span>9 sold</span>
+            </div>
+            <img
+              src="/images/product_2.jpeg"
+              alt="Product 2"
+              class="product__img"
+            />
+            <div class="product__desc">
+              <h3>Pineapple W-230 Smartwatch</h3>
+              <p>
+                <span class="dot green"></span>
+                <span class="dot black"></span>
+                <span class="dot red"></span>
+              </p>
+              <p>
+                Elevate your style and stay connected with the Pineapple W-230
+                Smartwatch ...
+                <a href="product.html" class="learn-more">Learn More</a>
+              </p>
+              <h4>Price: &#8377; 1799.00</h4>
+              <p>Rating: 4.2/5</p>
+              <button class="btn product__btn">Add to cart</button>
+            </div>
+          </article>
+
+          <!-- Product-3 -->
+          <article class="product card">
+            <div class="badge">
+              <span>6 in stock</span>
+              <hr class="hr-design" />
+              <span>4 sold</span>
+            </div>
+            <img
+              src="/images/product_3.jpeg"
+              alt="Product 3"
+              class="product__img"
+            />
+            <div class="product__desc">
+              <h3>Nokila Y-22</h3>
+              <p>
+                <span class="dot green"></span>
+                <span class="dot black"></span>
+                <span class="dot red"></span>
+              </p>
+              <p>
+                Unlock a world of endless possibilities with the Nokila
+                Y-22,....
+                <a href="product.html" class="learn-more">Learn More</a>
+              </p>
+              <h4>Price: &#8377; 16999.00</h4>
+              <p>Rating: 4.7/5</p>
+              <button class="btn product__btn">Add to cart</button>
+            </div>
+          </article>
+
+          <!-- Product-4 -->
+          <article class="product card">
+            <div class="badge">
+              <span>4 in stock</span>
+              <hr class="hr-design" />
+              <span>8 sold</span>
+            </div>
+            <img
+              src="/images/product_4.jpeg"
+              alt="Product 4"
+              class="product__img"
+            />
+            <div class="product__desc">
+              <h3>PT Smart-4K Ultra Smart TV</h3>
+              <p>
+                <span class="dot green"></span>
+                <span class="dot black"></span>
+                <span class="dot red"></span>
+              </p>
+              <p>
+                Elevate your viewing experience to new heights with the PT
+                Smart-4K Ultra...
+                <a href="product.html" class="learn-more">Learn More</a>
+              </p>
+              <h4>Price: &#8377; 13000.00</h4>
+              <p>Rating: 4.4/5</p>
+              <button class="btn product__btn">Add to cart</button>
+            </div>
+          </article>
+
+          <!-- Product-5 -->
+          <article class="product card">
+            <div class="badge">
+              <span>6 in stock</span>
+              <hr class="hr-design" />
+              <span>10 sold</span>
+            </div>
+            <img
+              src="/images/product_5.jpeg"
+              alt="Product 5"
+              class="product__img"
+            />
+            <div class="product__desc">
+              <h3>TKL 2309 Earbuds</h3>
+              <p>
+                <span class="dot green"></span>
+                <span class="dot black"></span>
+                <span class="dot red"></span>
+              </p>
+              <p>
+                Immerse yourself in crystal-clear audio with the TKL 2309
+                Earbuds,...
+                <a href="product.html" class="learn-more">Learn More</a>
+              </p>
+              <h4>Price: &#8377; 999.00</h4>
+              <p>Rating: 4.8/5</p>
+              <button class="btn product__btn">Add to cart</button>
+            </div>
+          </article>
+
+          <!-- Product-6 -->
+          <article class="product card">
+            <div class="badge">
+              <span>2 in stock</span>
+              <hr class="hr-design" />
+              <span>5 sold</span>
+            </div>
+            <img
+              src="/images/product_6.jpeg"
+              alt="Product 6"
+              class="product__img"
+            />
+            <div class="product__desc">
+              <h3>Bell Innovative S2227 Laptop</h3>
+              <p>
+                <span class="dot green"></span>
+                <span class="dot black"></span>
+                <span class="dot red"></span>
+              </p>
+              <p>
+                Experience unparalleled performance and power with the Bell
+                Innovative S2227...
+                <a href="product.html" class="learn-more">Learn More</a>
+              </p>
+              <h4>Price: &#8377; 47690.00</h4>
+              <p>Rating: 4.7/5</p>
+              <button class="btn product__btn">Add to cart</button>
+            </div>
+          </article>
+        </section>
+        <!-- Product Section End -->
+        <div class="pagination">
+          <button class="btn pagination-btn">
+            <i class="fa-solid fa-less-than"></i>
+          </button>
+          <button class="btn pagination-btn">2</button>
+          <button class="btn pagination-btn">3</button>
+          <button class="btn pagination-btn">4</button>
+          <button class="btn pagination-btn">5</button>
+          <button class="btn pagination-btn">6</button>
+          <button class="btn pagination-btn">7</button>
+          <button class="btn pagination-btn">8</button>
+          <button class="btn pagination-btn">9</button>
+          <button class="btn pagination-btn">10</button>
+          <button class="btn pagination-btn">...</button>
+          <button class="btn pagination-btn">50</button>
+          <button class="btn pagination-btn">
+            <i class="fa-solid fa-greater-than"></i>
+          </button>
+        </div>
+      </div>
+    </main>
+    <!-- main end -->
+
+    <!-- footer start -->
+    <footer class="footer flex-space-around">
+      <div class="flex-space-around">
+        <label for="subscribe">Subscribe to Newsletter </label>
+        <input
+          type="email"
+          name="subscribe"
+          id="subscribe"
+          placeholder="Enter Your Email"
+        />
+        <button class="btn btn-subscribe">subscribe</button>
+      </div>
+      <div>
+        <p class="copyright">
+          &copy; Copyright by Supriyo Das. All rights reserved
+        </p>
+      </div>
+    </footer>
+    <!-- footer end -->
+    <script src="script/index.js"></script>
+  </body>
+</html>

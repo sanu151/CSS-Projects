@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- meta-tag for SCO -->
+    <meta
+      name="description"
+      content="This is an ecommerce demo project made by Supriyo Das"
+    />
+
+    <title>E-commerce Demo Project</title>
+
+    <!-- font-awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- external CSS -->
+    <link rel="stylesheet" href="CSS/style.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="roboto-regular">
+    <!-- navbar start -->
+    <i class="fa-solid fa-bars fa-2x" id="menu-icon"></i>
+    <nav class="indie-flower-regular hidden" id="menu">
+      <ul class="nav-upper flex-space-around">
+        <li class="nav__list">
+          <a href="index.html" class="nav__link">Home</a>
+        </li>
+        <li class="nav__list">
+          <a href="register.html" class="nav__link">Register</a>
+        </li>
+        <li class="nav__list">
+          <a href="login.html" class="nav__link">Login</a>
+        </li>
+        <li class="nav__list">
+          <a href="index.html" class="nav__link">Logout</a>
+        </li>
+        <li class="nav__list">
+          <a href="contact.html" class="nav__link">Contact</a>
+        </li>
+        <li class="nav__list">
+          <a href="profile.html" class="nav__link">
+            <img
+              class="profile-img"
+              src="/images/profile.png"
+              alt="Profile Picture"
+            />
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- navbar end -->
+
+    <main class="flex-center main-section cart-main">
+      <div class="cart-item">
+        <div class="card cart__heading">
+          <h3>Shopping Cart [2 items]</h3>
+          <div class="cart__heading-action flex-space-between">
+            <label for="select">
+              <input type="checkbox" name="select" id="select" />
+              Select All
+            </label>
+            <button class="btn"><i class="fa-solid fa-trash"></i></button>
+            <button class="btn">shop more</button>
+          </div>
+        </div>
+
+        <div class="cart__product flex-space-between card">
+          <input type="checkbox" name="select" id="select1" />
+          <img
+            src="images/product_1.jpeg"
+            alt="Product 1"
+            class="cart__product-img"
+          />
+          <div class="cart__product-desc">
+            <h4>Tony X-4 Headphone</h4>
+            <h5>Price : &#8377;1999.00</h5>
+            <p>Free Shipping</p>
+          </div>
+          <div class="cart__product-action">
+            <button class="btn cart-trash">
+              <i class="fa-solid fa-trash"></i>
+            </button>
+            <div class="cart__product-qty">
+              <button class="btn"><i class="fa-solid fa-plus"></i></button>
+              <span>3</span>
+              <button class="btn"><i class="fa-solid fa-minus"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="cart__product flex-space-between card">
+          <input type="checkbox" name="select" id="select1" />
+          <img
+            src="images/product_3.jpeg"
+            alt="Product 3"
+            class="cart__product-img"
+          />
+          <div class="cart__product-desc">
+            <h4>Nokila Y-22</h4>
+            <h5>Price: &#8377; 16999.00</h5>
+            <p>Free Shipping</p>
+          </div>
+          <div class="cart__product-action">
+            <button class="btn cart-trash">
+              <i class="fa-solid fa-trash"></i>
+            </button>
+            <div class="cart__product-qty">
+              <button class="btn"><i class="fa-solid fa-plus"></i></button>
+              <span>3</span>
+              <button class="btn"><i class="fa-solid fa-minus"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cart-payment">
+        <div class="payment__summary card">
+          <h3>Payment Summery</h3>
+          <div class="flex-space-between">
+            <p>Subtotal :</p>
+            <p>&#8377;18998.00</p>
+          </div>
+          <div class="flex-space-between">
+            <p>Shipping Cost :</p>
+            <p>&#8377;2.00</p>
+          </div>
+          <div class="flex-space-between">
+            <p>Shipping Cost :</p>
+            <p>&#8377;19000.00</p>
+          </div>
+          <button class="btn payment__summary-btn">Pay now</button>
+        </div>
+
+        <div class="payment__method card">
+          <h3>Payment Methods</h3>
+          <ul class="pytment--options">
+            <li><i class="fa-brands fa-cc-visa fa-2x"></i></li>
+            <li><i class="fa-brands fa-cc-paypal fa-2x"></i></li>
+            <li><i class="fa-brands fa-google-pay fa-2x"></i></li>
+            <li><i class="fa-brands fa-amazon-pay fa-2x"></i></li>
+            <li><i class="fa-solid fa-credit-card fa-2x"></i></li>
+          </ul>
+        </div>
+      </div>
+    </main>
+
+    <!-- footer start -->
+    <footer class="footer flex-space-around">
+      <div class="flex-space-around">
+        <label for="subscribe">Subscribe to Newsletter </label>
+        <input
+          type="email"
+          name="subscribe"
+          id="subscribe"
+          placeholder="Enter Your Email"
+        />
+        <button class="btn btn-subscribe">subscribe</button>
+      </div>
+      <div>
+        <p class="copyright">
+          &copy; Copyright by Supriyo Das. All rights reserved
+        </p>
+      </div>
+    </footer>
+    <!-- footer end -->
+    <script src="script/index.js"></script>
+  </body>
+</html>
