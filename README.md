@@ -9,4 +9,7 @@
 **Project Deploy Link:** https://spicykingdemo.netlify.app/
 
 # Portfolio Demo Project
-**Project Deploy Link: ** https://portfoliodemosupriyo.netlify.app/
+**Project Deploy Link:** https://portfoliodemosupriyo.netlify.app/
+
+# Ecommerce Demo Project
+**Project Deploy Link:** https://demoecommercesanu.netlify.app/
